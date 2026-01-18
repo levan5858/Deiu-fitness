@@ -10,6 +10,8 @@ import {
   signOut
 } from "./firebase.js";
 
+const ADMIN_EMAIL = "admin@deiufitness.com";
+
 const loginSection = document.getElementById("loginSection");
 const adminSection = document.getElementById("adminSection");
 const loginForm = document.getElementById("loginForm");
@@ -140,20 +142,18 @@ if (loginForm) {
     event.preventDefault();
     setLoginStatus("", false);
 
-    const email = document.getElementById("adminEmail")?.value.trim() || "";
     const password = document.getElementById("adminPassword")?.value || "";
-
-    if (!email || !password) {
-      setLoginStatus("Enter email and password.", true);
+    if (!password) {
+      setLoginStatus("Enter the password.", true);
       return;
     }
 
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+      await signInWithEmailAndPassword(auth, ADMIN_EMAIL, password);
       setLoginStatus("Logged in.", false);
     } catch (error) {
       console.error(error);
-      setLoginStatus("Invalid login. Please try again.", true);
+      setLoginStatus("Invalid password. Please try again.", true);
     }
   });
 }
