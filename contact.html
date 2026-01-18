@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <link rel="canonical" href="https://deiu.fitness/contact.html" />
+  <title>Book Training | Deiu Fitness</title>
+  <link rel="preload" href="styles/global.css" as="style" />
+  <link rel="stylesheet" href="styles/global.css" />
+  <meta name="description" content="Book personal training with Andrei Deiu. In‑person, online coaching, and competition prep." />
+</head>
+<body class="page">
+  <header>
+    <div class="container nav-bar">
+      <a class="brand" href="index.html">
+        <img src="assets/IMG_2008.PNG" alt="Deiu Fitness logo" onerror="this.style.display='none'" />
+      </a>
+      <nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="locations.html">Coaching</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="merch.html">Programs</a></li>
+          <li><a href="contact.html">Book</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn secondary" href="media.html">Media</a>
+        <a class="btn" href="contact.html">Book Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <div class="eyebrow">Booking</div>
+        <h1>Book Andrei Deiu as your personal trainer.</h1>
+        <p class="tagline">Tell us your goals, availability, and training format. We respond within 24 hours.</p>
+        <div class="floating-cta">
+          <a class="btn" href="#booking-form">Request a spot</a>
+          <a class="btn secondary" href="media.html">View media</a>
+        </div>
+        <div class="stats-band">
+          <div class="stat">
+            <div class="label">Response</div>
+            <div class="value">24h</div>
+          </div>
+          <div class="stat">
+            <div class="label">Training</div>
+            <div class="value">In‑person + Online</div>
+          </div>
+          <div class="stat">
+            <div class="label">Clients</div>
+            <div class="value">Worldwide</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-media reveal">
+        <div class="glow"></div>
+        <div class="hero-card glass">
+          <img src="assets/images/andrei-17.jpg" alt="Andrei Deiu portrait" loading="eager" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal contact-grid">
+      <div class="card glass contact-card">
+        <h2>Request a booking</h2>
+        <p>Share your goals, availability, and preferred training format.</p>
+        <form id="booking-form" novalidate>
+          <div class="input">
+            <label for="fullName">Full name</label>
+            <input id="fullName" name="fullName" type="text" placeholder="Your name" required />
+          </div>
+          <div class="input">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div class="input">
+            <label for="phone">Phone / WhatsApp</label>
+            <input id="phone" name="phone" type="tel" placeholder="+1 555 000 0000" required />
+          </div>
+          <div class="input">
+            <label for="location">City + Country</label>
+            <input id="location" name="location" type="text" placeholder="London, UK" required />
+          </div>
+          <div class="input">
+            <label for="trainingType">Training type</label>
+            <select id="trainingType" name="trainingType" required>
+              <option value="">Select an option</option>
+              <option value="in_person">In‑person training</option>
+              <option value="online">Online coaching</option>
+              <option value="competition_prep">Competition prep</option>
+            </select>
+          </div>
+          <div class="input">
+            <label for="experience">Training experience</label>
+            <select id="experience" name="experience" required>
+              <option value="">Select your level</option>
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
+          </div>
+          <div class="input">
+            <label for="goals">Fitness goals</label>
+            <textarea id="goals" name="goals" rows="4" placeholder="Fat loss, muscle gain, stage prep, performance, etc." required></textarea>
+          </div>
+          <div class="input">
+            <label for="availability">Availability</label>
+            <textarea id="availability" name="availability" rows="3" placeholder="Days/times you can train" required></textarea>
+          </div>
+          <div class="input">
+            <label for="injuries">Injuries or limitations</label>
+            <textarea id="injuries" name="injuries" rows="3" placeholder="List any injuries, limitations, or medical notes"></textarea>
+          </div>
+          <div class="input">
+            <label for="instagram">Instagram (optional)</label>
+            <input id="instagram" name="instagram" type="text" placeholder="@yourhandle" />
+          </div>
+          <div class="form-footer">
+            <div class="form-status status" id="booking-status"></div>
+            <button class="btn" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="card glass contact-aside">
+        <div class="mini-card">
+          <h3>Booking</h3>
+          <p>booking@deiufitness.com</p>
+          <p>We respond within 24 hours.</p>
+        </div>
+        <div class="mini-card">
+          <h3>Media & Partnerships</h3>
+          <p>media@deiufitness.com</p>
+          <p>partners@deiufitness.com</p>
+        </div>
+        <div class="mini-card">
+          <h3>Follow the journey</h3>
+          <p><a href="https://www.youtube.com" target="_blank" rel="noreferrer">YouTube</a> · <a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a></p>
+          <p>Training updates and new openings.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="cta-panel glass">
+        <div>
+          <div class="eyebrow">Health is Wealth</div>
+          <h2 class="title-lg">Ready to start?</h2>
+          <p>Limited 1:1 availability. Apply now to reserve a spot.</p>
+        </div>
+        <a class="btn" href="#booking-form">Apply now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© <span class="js-year"></span> Deiu Fitness. Health is Wealth.</div>
+      <div class="footer-links">
+        <a href="media.html">Media</a>
+        <a href="contact.html">Book</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script type="module" src="scripts/booking.js"></script>
+</body>
+</html>
